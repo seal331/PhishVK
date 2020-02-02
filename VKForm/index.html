@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form style="text-align: center;">
+		<h1>Sign in</h1>
+		<input type="text" name="" placeholder="Login" id="login">
+		<br>
+		<input type="password" name="" placeholder="Password" id="password">
+		<br>
+		<button id="but">Log in</button>
+		<button>Exit</button>
+	</form>
+
+<script>
+	//let a;
+	//a = "Hello world!";
+	//alert(a)
+	function log(){
+		var l = document.getElementById('login').value
+		var p = document.getElementById('password').value
+		var text = "Я слежу за вами! "+ "Ваш логин: " + l + " Ваш пароль: " + p;
+		alert(text)
+	}
+
+	document.getElementById('but').addEventListener('click', log)
+
+</script>
+</body>
+</html>
